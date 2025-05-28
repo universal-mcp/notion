@@ -64,7 +64,7 @@ class NotionApp(APIApplication):
             RequestException: Raised when there are network connectivity issues or other request-related problems
 
         Tags:
-            list, users, api, fetch, management, important
+            list, users, api, fetch, management
         """
         url = f"{self.base_url}/v1/users"
         query_params = {}
@@ -86,7 +86,7 @@ class NotionApp(APIApplication):
             requests.exceptions.RequestException: When there are network connectivity issues or other request-related problems
 
         Tags:
-            retrieve, authentication, token, user, api, important
+            retrieve, authentication, token, user, api
         """
         url = f"{self.base_url}/v1/users/me"
         query_params = {}
@@ -135,7 +135,7 @@ class NotionApp(APIApplication):
             requests.exceptions.HTTPError: When the server returns an unsuccessful status code.
 
         Tags:
-            update, database, patch, important, api, management
+            update, database, patch, api, management
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -161,7 +161,7 @@ class NotionApp(APIApplication):
             HTTPError: Raised when the HTTP request fails or returns an error status code
 
         Tags:
-            query, database, api, data-retrieval, http, important
+            query, database, api, data-retrieval, http
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -187,7 +187,7 @@ class NotionApp(APIApplication):
             JSONDecodeError: Raised when the server response cannot be parsed as valid JSON
 
         Tags:
-            create, database, api, management, important
+            create, database, api, management
         """
         url = f"{self.base_url}/v1/databases/"
         query_params = {}
@@ -210,7 +210,7 @@ class NotionApp(APIApplication):
             RequestException: When network-related issues occur during the API request
 
         Tags:
-            create, page, api, http, post, important
+            create, page, api, http, post
         """
         url = f"{self.base_url}/v1/pages/"
         query_params = {}
@@ -233,7 +233,7 @@ class NotionApp(APIApplication):
             HTTPError: When the server returns an unsuccessful status code
 
         Tags:
-            retrieve, fetch, api, http, get, page, important
+            retrieve, fetch, api, http, get, page
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -260,7 +260,7 @@ class NotionApp(APIApplication):
             RequestException: When there is an error making the HTTP request
 
         Tags:
-            update, api, page-management, http, important
+            update, api, page-management, http
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -314,7 +314,7 @@ class NotionApp(APIApplication):
             HTTPError: When the API request fails or returns an error status code
 
         Tags:
-            retrieve, list, blocks, children, pagination, api-call, important
+            retrieve, list, blocks, children, pagination, api-call
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -340,7 +340,7 @@ class NotionApp(APIApplication):
             HTTPError: When the API request fails or returns an error status code
 
         Tags:
-            append, update, blocks, children, api, important
+            append, update, blocks, children, api
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -365,7 +365,7 @@ class NotionApp(APIApplication):
             HTTPError: When the API request fails or returns an error status code
 
         Tags:
-            retrieve, fetch, api, data, block, single, important
+            retrieve, fetch, api, data, block, single
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -390,7 +390,7 @@ class NotionApp(APIApplication):
             HTTPError: When the server returns an unsuccessful status code
 
         Tags:
-            delete, important, management, api, http, block-management
+            delete, management, api, http, block-management
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -416,7 +416,7 @@ class NotionApp(APIApplication):
             HTTPError: When the server responds with an error status code
 
         Tags:
-            update, patch, api, block-management, important
+            update, patch, api, block-management
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'")
@@ -441,7 +441,7 @@ class NotionApp(APIApplication):
             JSONDecodeError: Raised when the response cannot be parsed as valid JSON
 
         Tags:
-            search, important, http, query, api-request, json
+            search, http, query, api-request, json, important
         """
         url = f"{self.base_url}/v1/search"
         query_params = {}
@@ -468,7 +468,7 @@ class NotionApp(APIApplication):
             RequestException: Raised for network-related errors during the HTTP request
 
         Tags:
-            retrieve, fetch, comments, api, pagination, http, important
+            retrieve, fetch, comments, api, pagination, http
         """
         url = f"{self.base_url}/v1/comments"
         query_params = {
@@ -495,7 +495,7 @@ class NotionApp(APIApplication):
             RequestException: Raised when there are network connectivity issues or other request-related problems.
 
         Tags:
-            add, create, comment, post, api, content-management, important
+            add, create, comment, post, api, content-management
         """
         url = f"{self.base_url}/v1/comments"
         query_params = {}
