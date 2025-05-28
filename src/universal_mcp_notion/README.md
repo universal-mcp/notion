@@ -1,10 +1,10 @@
-# Notion MCP Server
+# NotionApp MCP Server
 
-An MCP Server for the Notion API.
+An MCP Server for the NotionApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Notion API.
+This is automatically generated from OpenAPI schema for the NotionApp API.
 
 
 | Tool | Description |
